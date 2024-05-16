@@ -1324,9 +1324,9 @@ HAL_Init();
  8000b9e:	681b      	ldr	r3, [r3, #0]
  8000ba0:	2b02      	cmp	r3, #2
  8000ba2:	d126      	bne.n	8000bf2 <main+0x632>
-					HAL_UART_Transmit(&hlpuart1, "YOUR LIFE LEFT JUST 1 !!\n\r", strlen("YOUR LIFE HAVE BEEN LEFT JUST 1 !!\n\r") ,8);
+					HAL_UART_Transmit(&hlpuart1, "YOUR LIFE LEFT JUST 1 !!\n\r", strlen("YOUR LIFE LEFT JUST 1 !!\n\r") ,8);
  8000ba4:	2308      	movs	r3, #8
- 8000ba6:	2224      	movs	r2, #36	@ 0x24
+ 8000ba6:	221a      	movs	r2, #26
  8000ba8:	4939      	ldr	r1, [pc, #228]	@ (8000c90 <main+0x6d0>)
  8000baa:	483a      	ldr	r0, [pc, #232]	@ (8000c94 <main+0x6d4>)
  8000bac:	f005 f98e 	bl	8005ecc <HAL_UART_Transmit>

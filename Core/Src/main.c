@@ -393,7 +393,7 @@ HAL_Init();
 					eepromExampleWriteFlag = 1;
 
 				}else if(data[2]==0 && life == 2){
-					HAL_UART_Transmit(&hlpuart1, "YOUR LIFE LEFT JUST 1 !!\n\r", strlen("YOUR LIFE HAVE BEEN LEFT JUST 1 !!\n\r") ,8);
+					HAL_UART_Transmit(&hlpuart1, "YOUR LIFE LEFT JUST 1 !!\n\r", strlen("YOUR LIFE LEFT JUST 1 !!\n\r") ,8);
 
 					life--;
 					bullet[0] = 0;
